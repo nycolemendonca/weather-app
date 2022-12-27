@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #181818;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 30px;
+    width: 80vw;
+    max-width: 420px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    color: #FFFFFF;
+}
+
+h1.temp {
+    margin: 0;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+input.search-bar {
+    width: calc(100% - 100px);
+    border: none;
+    outline: none;
+    padding: .4em 1em;
+    border-radius: 24px;
+    background: rgba(0, 0, 0, 0.9);
+    color: #FFFFFF;
+    font-size: 105%;
+}
+
+input::placeholder {
+    color: #FFFFFF5B;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin: 0 .5em;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.9);
+    color: #FFFFFF;
+    transition: .2s ease-in-out;
+}
+
+button:hover {
+    background: rgba(87, 87, 87, 0.5);
+    color: #FFFFFF;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+}
+
+.weather .temp {
+    font-size: 2.5rem;
+}
+
+.weather .temp-and-icon {
+    display: flex;
+    align-items: center;
+}
+
+.weather .description {
+    text-transform: capitalize;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: 'Weather App';
+    color: #FFFFFF;
+    position: absolute;
+    top: 2;
+    left: 8;
+    font-size: 1.2rem;
+}
+
+footer, a {
+    text-decoration: none;
+    color: #0000009B;
+    font-size: .8rem;
+}
