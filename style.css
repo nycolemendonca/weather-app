@@ -107,9 +107,3 @@ button:hover {
     left: 8;
     font-size: 1.2rem;
 }
-
-footer, a {
-    text-decoration: none;
-    color: #0000009B;
-    font-size: .8rem;
-}
